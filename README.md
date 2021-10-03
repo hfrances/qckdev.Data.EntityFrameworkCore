@@ -1,4 +1,4 @@
-<a href="https://www.nuget.org/packages/qckdev.Data.Dapper"><img src="https://img.shields.io/nuget/v/qckdev.Data.Dapper.svg" alt="NuGet Version"/></a>
+<a href="https://www.nuget.org/packages/qckdev.Data.EntityFrameworkCore"><img src="https://img.shields.io/nuget/v/qckdev.Data.EntityFrameworkCore.svg" alt="NuGet Version"/></a>
 <a href="https://sonarcloud.io/dashboard?id=qckdev.Data.EntityFrameworkCore"><img src="https://sonarcloud.io/api/project_badges/measure?project=qckdev.Data.EntityFrameworkCore&metric=alert_status" alt="Quality Gate"/></a>
 <a href="https://sonarcloud.io/dashboard?id=qckdev.Data.EntityFrameworkCore"><img src="https://sonarcloud.io/api/project_badges/measure?project=qckdev.Data.EntityFrameworkCore&metric=coverage" alt="Code Coverage"/></a>
 <a><img src="https://hfrances.visualstudio.com/Main/_apis/build/status/qckdev.Data.EntityFrameworkCore?branchName=main" alt="Azure Pipelines Status"/></a>
