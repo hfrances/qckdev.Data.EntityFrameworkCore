@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qckdev.Data.EntityFrameworkCore", "qckdev.Data.EntityFrameworkCore\qckdev.Data.EntityFrameworkCore.csproj", "{61B02B5F-F53B-4D16-840C-3D251555E70A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qckdev.Data.EntityFrameworkCore.Test", "qckdev.Data.EntityFrameworkCore.Test\qckdev.Data.EntityFrameworkCore.Test.csproj", "{F1482878-12EB-40DD-8ED0-F90B5E339614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61B02B5F-F53B-4D16-840C-3D251555E70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B02B5F-F53B-4D16-840C-3D251555E70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B02B5F-F53B-4D16-840C-3D251555E70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B02B5F-F53B-4D16-840C-3D251555E70A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1482878-12EB-40DD-8ED0-F90B5E339614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1482878-12EB-40DD-8ED0-F90B5E339614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1482878-12EB-40DD-8ED0-F90B5E339614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1482878-12EB-40DD-8ED0-F90B5E339614}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50E2D5A8-5B83-4218-B48B-2F93E7A83AE3}
+	EndGlobalSection
+EndGlobal
