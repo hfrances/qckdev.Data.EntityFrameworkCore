@@ -140,12 +140,6 @@ jobs:
       
             write-output "##vso[task.addattachment type=Distributedtask.Core.Summary;name=Environment Variables;]$fileName" 
      
-      - task: FileTransform@2
-        inputs:
-          folderPath: '$(System.DefaultWorkingDirectory)'
-          jsonTargetFiles: '**/appsettings.json'
-          xmlTransformationRules: '' # disabled
-
       - task: UseDotNet@2
         inputs:
           packageType: 'sdk'
