@@ -139,7 +139,14 @@ jobs:
             set-content $fileName $out
       
             write-output "##vso[task.addattachment type=Distributedtask.Core.Summary;name=Environment Variables;]$fileName" 
-     
+
+      - task: UseDotNet@2
+        inputs:
+          packageType: 'sdk'
+          version: '8.0.x'
+          includePreviewVersions: false
+        displayName: 'UseDotNet 8.0'
+        
       - task: UseDotNet@2
         inputs:
           packageType: 'sdk'
