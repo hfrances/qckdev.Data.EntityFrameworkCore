@@ -289,7 +289,6 @@ jobs:
             $assemblyVersion = "$(BuildParameters.ReleaseAssemblyVersion)";
             $versionForce = "$(ForceVersion)"
 
-            Write-Output "$versionForce";
             if ($version) {
               $solution = (Get-Item $solutionPath);
               $solutionContent = (Get-Content $solution);
