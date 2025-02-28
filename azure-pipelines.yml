@@ -31,7 +31,7 @@ parameters:
     default: auto
   - name: ForceVersion
     type: boolean
-    default: false # Indica si debe reemplazar la versión siempre o si debe hacerlo solamente cuando coincide con el proyecto principal.
+    default: false # Indica si debe reemplazar la versiÃ³n siempre o si debe hacerlo solamente cuando coincide con el proyecto principal.
 
 variables:
   - name: BuildParameters.RestoreBuildProjects
@@ -190,8 +190,8 @@ jobs:
           targetType: 'inline'
           script: |
             ############################################################
-            # Establecer la versión release:
-            # Si la versión contiene un <prerelease>:
+            # Establecer la versiÃ³n release:
+            # Si la versiÃ³n contiene un <prerelease>:
             # - releaseVersion: <version>-<prerelease>+<build>
             # - dockerVersion: <version>-<prerelease>
             # - dockerAlias: <prerelease>
@@ -207,7 +207,7 @@ jobs:
             # - releaseVersion: <version>-<rama>.<build>
             # - dockerVersion: <version>-<rama>.<build>
             # - dockerAlias: alpha
-            # NOTA: <prerelease> podría contener o no puntos. Ejemplos:
+            # NOTA: <prerelease> podrÃ­a contener o no puntos. Ejemplos:
             # - 1.0.0-beta
             # - 1.0.0-beta.1
             ############################################################
@@ -357,17 +357,15 @@ jobs:
           projects: '$(BuildParameters.Solution)'
      
       - ${{ if ne(parameters.Analyze, 'disabled') }} :
-        - task: SonarCloudPrepare@1
+        - task: SonarCloudPrepare@3
           inputs:
             SonarCloud: 'SonarCloud'
             organization: 'hfrances-github'
-            scannerMode: 'MSBuild'
+            scannerMode: 'dotnet'
             projectKey: '$(BuildParameters.ProjectKey)'
             projectName: '$(BuildParameters.ProjectName)'
             projectVersion: '$(MainProject.Version)'
             extraProperties: |
-              # Additional properties that will be passed to the scanner, 
-              # Put one key=value per line, example:
               sonar.exclusions=**/obj/**,**/*.dll
               sonar.cs.opencover.reportsPaths=**/*.opencover.xml
               sonar.cs.cobertura.reportsPaths=**/*.cobertura.xml
@@ -434,7 +432,7 @@ jobs:
         condition: eq(variables.HasTests, 'true')
         displayName: 'Coverage: Collect files'
      
-      - task: PublishCodeCoverageResults@1
+      - task: PublishCodeCoverageResults@2
         inputs:
           codeCoverageTool: 'Cobertura'
           summaryFileLocation: '$(CoverageResults)'
@@ -443,9 +441,9 @@ jobs:
         displayName: 'Coverage: Publish report'
      
       - ${{ if ne(parameters.Analyze, 'disabled') }} :
-        - task: SonarCloudAnalyze@1
+        - task: SonarCloudAnalyze@3
           condition: eq(variables.SonarQubeEnabled, 'true')
-        - task: SonarCloudPublish@1
+        - task: SonarCloudPublish@3
           inputs:
             pollingTimeoutSec: '300'
           condition: eq(variables.SonarQubeEnabled, 'true')
