@@ -1,7 +1,7 @@
 [![NuGet Version](https://img.shields.io/nuget/v/qckdev.Data.EntityFrameworkCore.svg)](https://www.nuget.org/packages/qckdev.Data.EntityFrameworkCore)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=qckdev.Data.EntityFrameworkCore&metric=alert_status)](https://sonarcloud.io/dashboard?id=qckdev.Data.EntityFrameworkCore)
 [![Code Coverage](https://sonarcloud.io/api/project_badges/measure?project=qckdev.Data.EntityFrameworkCore&metric=coverage)](https://sonarcloud.io/dashboard?id=qckdev.Data.EntityFrameworkCore)
-![Azure Pipelines Status](https://hfrances.visualstudio.com/Main/_apis/build/status/qckdev.Data.EntityFrameworkCore?branchName=main)
+![Azure Pipelines Status](https://hfrances.visualstudio.com/Main/_apis/build/status/qckdev.Data.EntityFrameworkCore?branchName=master)
 
 # qckdev.Data.EntityFrameworkCore
 
