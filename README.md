@@ -45,3 +45,9 @@ namespace qckdev.Data.EntityFrameworkCore.Test.Configuration
 }
 
 ```
+
+## 🤝 Contributing
+Issues and pull requests are welcome! See the contribution guidelines (coming soon).
+
+## 📜 License
+This project is licensed under the terms of the [MIT License](LICENSE).
