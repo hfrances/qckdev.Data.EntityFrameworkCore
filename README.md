@@ -7,6 +7,14 @@
 
 Provides a default set of tools for EntityFramework.
 
+## 🛠️ Installation
+
+```bash
+dotnet add package qckdev.Data.EntityFrameworkCore
+```
+
+## ⚡ Quick Start
+
 ```cs
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
